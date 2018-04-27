@@ -1,3 +1,5 @@
+sources : https://github.com/WeScale/hands-on-terraform.git
+
 # Hands on Terraform
 
 Cet ensemble d'exercices a été initié pour une session donnée à Devoxx 2018. Pour dérouler ce hands-on
