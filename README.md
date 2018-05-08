@@ -6,9 +6,23 @@ Cet ensemble d'exercices a été initié pour une session donnée à Devoxx 2018
 vous aurez besoin :
 
 * d'un compte AWS et de vos clés d'API AWS
+**thomasfourest comments :**
+> create an IAM user : https://console.aws.amazon.com/iam/home#/home
+> follow the links : (your account top right) thomas.fourest/Mes informations d'identification de sécurité/(link) `Console IAM`
+> add a user named `devoxx`
+> in the tab `informations d'identification de securité`, create an access key and keep the following values :
+> access ID `AAAA1111AAAA1111AA11`
+> access secret `AaaaA1111AAAAAaAaA1111AAAAaaaAAAA111`
+
 * *Sous Windows*: d'installer [Git For Windows](https://gitforwindows.org/) et de lancer Git Bash pour lancer les commandes listées
 dans ce tutoriel.
 * du binaire Terraform ([installer](https://www.terraform.io/downloads.html))
+**thomasfourest comments :**
+> download binaries : https://www.terraform.io/downloads.html 
+> uncompress the binary /Applications/terraform/terraform
+> `$ cat /etc/paths.d/terraform
+>    /Applications/terraform`
+
 * un éditeur de code. Si vous n'avez pas de préférence, nous vous conseillons [Pycharm](https://www.jetbrains.com/pycharm/download/#section=linux)
 additionné du plugin [Terraform/HCL](https://plugins.jetbrains.com/plugin/7808-hashicorp-terraform--hcl-language-support)
 * Nous utilisons la région Paris (eu-west-3) 
@@ -22,6 +36,10 @@ l'option `Environment variables` puisque c'est celle que nous avons prise. Les a
 code à chaque étape.
 
 * Placez vous dans le répertoire `step-0`
+**thomasfourest comments :**
+> `export AWS_ACCESS_KEY_ID="AAAA1111AAAA1111AA11"
+> export AWS_SECRET_ACCESS_KEY="AaaaA1111AAAAAaAaA1111AAAAaaaAAAA111"
+> export AWS_DEFAULT_REGION="eu-west-3"'
 
 * Lancez les commandes:
 ```
@@ -43,7 +61,7 @@ caller_arn = ...
 caller_user = ...
 ```
 
-Si c'est le cas, Terraform arrive à s'authentifier auprès d'AWS. Bravo.
+Si c'est le cas, Terraform arrive à s'authentifier auprès d'AWS. Bravo!
 
 
 
